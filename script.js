@@ -86,7 +86,8 @@ console.log(persn["name"]);
 Writing an object values and displaying or rendering the purpose/execution on browser
 */
 let appartment = "Casamia"
-document.writeln(`Hello ${appartment}.`)
+document.writeln(`Hello ${appartment}.`); 
+
 
 
 // Arrays (lists)
@@ -167,3 +168,48 @@ groupBy();
 const groupedByName = Object.groupBy(employers, (employers) => employers.name);
 
 console.log(groupedByName);
+
+let fullName = "Goi Naath";
+let aged = 17;
+let isStudentAt = true;
+
+
+// rendering/displaying on brower
+document.getElementById("p1"). textContent = `Your name is ${fullName}`;
+document.getElementById("p2"). textContent = `You are ${aged} years old.`;
+document.getElementById("p3"). textContent = `Goi Naath is a student ${isStudentAt}`;
+
+let contact = [1, 2, 3, 4, 5, 6];
+
+document.getElementById("num"). textContent = `Contact code of friends ${contact}`;
+
+
+// data conversion
+let agge = window.prompt('how old are you');
+agge+=1;
+agge = Number(agge);
+console.log(agge.typeof.agge);
+
+let x = 'pizza';
+let y = 'pizza';
+let z = 'pizza';
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
+
+let machine = {
+  cpu: 'i9',
+  ram: 16,
+  brand: 'HP',
+
+  greet: function() {
+    console.log('Hello World');
+  }
+};
+
+machine.greet();
